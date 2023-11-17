@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--HTML Document Begins-->
+<html lang="en">
+<!--
+Modified By: Alan Hernandez
+Date Started: November 12, 2023
+Date Modified: November 16, 2023
+-->
+
+<!--Head-->
+<head>
+<!--Page Title-->
+  <title>Bootstrap 5 Website Example</title>
+<!--Meta Data-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<!--Embedded Styles-->
+  <style>
+/*Attributes for the 'fakeimg' class*/
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+<!--External CSS-->
+<link rel="stylesheet" href="calculate_tax.css">
+</head>
+
+<!--Body-->
+<body>
+<!--Main Page Header-->
+  <div class="p-5 bg-primary text-white text-center">
+      <h1>My First Bootstrap 5 Page</h1>
+<!--Temporary Caption-->
+      <p>Resize this responsive page to see the effect!</p> 
+  </div>
+<!--Navigation Bar-->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+<!--Active Link?-->
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+<!--Link-->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+<!--Link-->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+<!--Disabled Link-->
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!---->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-4">
+<!--About Me-->
+        <h2>About Me</h2>
+        <!--<h5>Photo of me:</h5>-->
+<!--Image-->
+        <!--<div class="fakeimg">Fake Image</div>-->
+<!--Paragraph-->
+        <p>
+          Hello, my name is Alan and this is my 2nd year as a student at Cerritos College.<br />
+          My favorite hobbies include: Sculpting, Drawing, & Video Games.<br />
+          I am currently working to obtain my certificate in client-side web development.<br />
+          On my journey to obtain my certification, I have learned about Python, C++, HTML, CSS, as well as some other basics of Web development.<br />
+          So far, when it comes to Javascript, I have learned a lot about the way function declarations work & how variables are defined in the language.
+          As I continue to learn more about JavaScript, I hope to reach my goals very soon.
+        </p>
+<!--Some Links-->
+        <h3 class="mt-4">Some Links</h3>
+<!--Paragraph-->
+        <p>Lorem ipsum dolor sit ame.</p>
+        <ul class="nav nav-pills flex-column">
+<!--Active Link-->
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+<!--Link-->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+<!--Link-->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+<!--Disabled Link-->
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+<!--Weird Unused Class-->
+        <hr class="d-sm-none">
+      </div>
+
+<!--Blog Posts-->
+      <div class="col-sm-8">
+<!--Post Title 01-->
+        <h2>Income Tax Calculator</h2>
+<!--Description & Date-->
+        <h5>By: Alan Hernandez, Oct 14, 2023 (Modified: Nov 16, 2023)</h5>
+<!--Divider with the ID 'income_tax_calculator'-->
+        <div id="income_tax_calculator">
+<!--Calculator Main Header-->
+          <h1>Income Tax Calculator</h1>
+<!--Input Income & Calculate Button-->
+		      <div>
+			      <label>Enter taxable income:</label>
+			      <input type="text" id="income" />
+			      <input type="button" value="Calculate" name="calculate" id="calculate" />
+		      </div>
+<!--Income Tax Input-->
+		      <div>
+			      <label>Income tax owed:</label>
+			      <input type="text" id="tax" disabled>
+		      </div>
+        </div>
+<!--Post Title 02-->
+        <h2 class="mt-5">TITLE HEADING</h2>
+<!--Description & Date-->
+        <h5>Title description, Sep 2, 2020</h5>
+<!--Image-->
+        <div class="fakeimg">Fake Image</div>
+<!--Paragraph Excerpt-->
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+    </div>
+  </div>
+<!--Footer-->
+  <div class="mt-5 p-4 bg-dark text-white text-center">
+    <p>Footer</p>
+  </div>
+<!--JavaScript Call-->
+	<script src="calculate_tax.js"></script>
+</body>
+</html>
