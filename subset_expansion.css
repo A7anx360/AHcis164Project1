@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*
+Modified By: Alan Hernandez
+Date Started: November 19, 2023
+Date Started: December 01, 2023
+*/
+
+/*Default Attributes*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*Main Attributes*/
+main#jdom {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+	width: 650px;
+	margin: 0 auto;
+	padding: 15px 25px;	
+	border: 3px solid blue;
+}
+
+/*General 'h1' Heading Attributes*/
+main h1 { 
+	font-size: 150%;
+}
+
+/*General 'h2' Heading Attributes*/
+h2 {
+	font-size: 120%;
+	padding: .25em 0 .25em 25px;
+}
+
+/*Attributes for hidden 'div' elements*/
+div.hide {
+	display: none;
+}
+
+/*General Attributes for Unordered Lists*/
+ul {
+	padding-left: 45px;
+}
+
+/*General Attributes for List Items*/
+li {
+	padding-bottom: .4em;
+}
+
+/*Attributes for the nested 'p' & 'a' elements*/
+main p, a {
+	padding-bottom: .4em;
+	padding-left: 25px;
+}
+
+/*Hover attributes for the nested 'p' & 'a' elements*/
+a, a:focus, a:hover {
+	color: blue;
+}
