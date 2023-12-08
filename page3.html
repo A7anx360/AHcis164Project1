@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Modified By: Alan Hernandez
+Date Started: November 19, 2023
+Date Modified: December 07, 2023
+-->
+
+<!--Head-->
+<head>
+<!--Meta Data-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Page Title-->
+    <title>My Artwork</title>
+<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<!--External CSS-->
+    <link rel="stylesheet" href="image_gallery.css">
+</head>
+
+<!--Body-->
+<body>
+<!--Main Page Header-->
+	<div class="p-5 bg-primary text-white text-center">
+		<h1>Alan's Website</h1>
+<!--Temporary Caption-->
+		<p>Welcome!</p> 
+	</div>
+	<!--Navigation Bar-->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<div class="container-fluid">
+			<ul class="navbar-nav">
+<!--Home Link-->
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+<!--Web Development Link-->
+    			<li class="nav-item">
+          			<a class="nav-link" href="page2.html">Web Development</a>
+        		</li>
+<!--My Art Link-->
+        		<li class="nav-item">
+        			<a class="nav-link active" href="page3.html">My Artwork</a>
+        		</li>
+<!--Disabled Link-->
+        		<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container mt-5">
+		<div class="row">
+		  <div class="col-sm-4">
+<!--Some Links-->
+	<h3 class="mt-4">More Content</h3>
+<!--Paragraph-->
+        <p>Feel free to browse my other pages.</p>
+        <ul class="nav nav-pills flex-column">
+<!--Home Link-->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+<!--Web Development Link-->
+          <li class="nav-item">
+            <a class="nav-link" href="page2.html">Web Development</a>
+          </li>
+<!--My Art Link-->
+          <li class="nav-item">
+            <a class="nav-link active" href="page3.html">My Artwork</a>
+          </li>
+<!--Disabled Link-->
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+<!--Weird Unused Class-->
+        <hr class="d-sm-none">
+    </div>
+<!--Main Content-->
+	<main id="jdom">
+<!--Main Header-->
+		<h1>My Artwork</h1>
+<!--Unordered List-->
+		<ul id="image_list">
+			<li><a href="images/grand_prix.jpg" title="This is a drawing I created for a college web-development project,
+			basically I used this drawing for a website based on a racing video-game that doesn't even exist, (that's my dog by the way.)">Parfait Wins the Grand-Prix</a></li>
+			<li><a href="images/limonada.jpg" title="A drawing of Lucy Annabelle Suzette (my Original Character) relaxing at the beach
+				(or at least trying to). Just ignore the giant angry rabbit in the background & everything will be fine.">Giant Rabbits & Lemonade</a></li>
+			<li><a href="images/lucy3d_jhart_kimono.jpg" title="This is a 3D model I made of Lucy Annabelle (my Original Character).
+			The kimono she is wearing uses my sister's koi-fish paintings as a texture. It's basically an art collab with my sister Jasmine (JHart).">Lucy (JHart Kimono)</a></li>
+			<li><a href="images/nervous_dinosaur.jpg" title="This is a goofy clay dinosaur I created on accident.
+			Basically, I was commissioned to make a clay dinosaur (just any dinosaur), however, once I finished it,
+			I realized it was too big. So I created a smaller one & kept this one because I liked it.">Nervous Clay Dinosaur</a></li>
+			<li><a href="images/mario_and_luigi.png" title="I sculpted the Super Mario Bros. because I love to play the games. (The Characters are Owned by Nintendo).">Clay Super Mario Bros.</a></li>
+		</ul>
+<!--Caption-->
+		<h2 id="caption">This is a drawing I created for a college web-development project,
+		basically I used this drawing for a website based on a racing video-game that doesn't even exist, (that's my dog by the way.)</h2>
+<!--Image Gallery-->
+		<p id="gallery">
+			<img id="main_image" src="images/grand_prix.jpg" alt="Image Gallery area">
+		</p>
+	</main>
+<!--JQuery Call-->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<!--JavaScript Call-->
+   	<script src="image_gallery.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@
 // Strict mode is enabled (however that even works)
 "use strict";
 
-// A JQuery method that makes sue the DOM is loaded before executing.
+// A JQuery method that makes sure the DOM is loaded before executing.
 $(document).ready( () => {
 //
     $("main a").click( evt => {

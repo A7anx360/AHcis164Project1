@@ -1,26 +1,52 @@
-body {
+@charset "UTF-8";
+/*
+Modified By: Alan Hernandez
+Date Started: December 06, 2023
+*/
+
+/*Main Attributes*/
+main#jdom {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+	width: 650px;
+	margin: 0 auto;
+	padding: 15px 25px;	
+	border: 3px solid blue;
+}
+
+/*Body Attributes*/
+main body {
     font-family: Arial, Helvetica, sans-serif;
     width: 420px;
     margin: 0 auto;
     padding: 20px;
     border: 3px solid blue;
 }
-h1, h2, ul, p {
+
+/*Attributes for the elements'h1', 'h2', 'ul', & 'p'*/
+main h1, h2, ul, p {
 	margin: 0;
 	padding: 0;
 }
-h1 {
+
+/*General 'h1' Heading Attributes*/
+main h1 {
 	padding-bottom: .25em;
-	color: blue;
 }
-h2 {
+
+/*General 'h1' Heading Attributes*/
+main h2 {
 	font-size: 120%;
 	padding: .5em 0;
 }
-li {
+
+/*General 'li' Heading Attributes*/
+main li {
 	padding: 0 0.25em;
 	display: inline;
 }
+
+/*Attributes for the '#caption' & '#gallery' IDs*/
 #caption, #gallery {
 	text-align: center;
 }
