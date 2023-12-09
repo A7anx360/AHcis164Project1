@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 Modified By: Alan Hernandez
-Date Started: December 08, 2023
+Date Started: December 07, 2023
 */
 
 /*Main Attributes*/
@@ -14,16 +14,16 @@ main#jdom {
 	border: 3px solid blue;
 }
 
-/*Body Attributes*/
+/*Main Body Attributes*/
 main body {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 420px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 3px solid blue;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	padding: 20px;
+	width: 550px;
+	border: 3px solid blue;
 }
 
-/*Attributes for the elements'h1', 'h2', 'ul', & 'p'*/
+/*Attributes for the main elements'h1', 'h2', 'ul', & 'p'*/
 main h1, h2, ul, p {
 	margin: 0;
 	padding: 0;
@@ -37,17 +37,16 @@ main h1 {
 /*General 'h2' Heading Attributes*/
 main h2 {
 	font-size: 120%;
-	padding: .5em 0;
+	padding: .5em 0 .25em;
 }
 
-/*General 'li' Heading Attributes*/
+/*General 'li' Attributes*/
 main li {
-	padding: 0 0.25em;
+	padding-right: 10px;
 	display: inline;
 }
 
-/*Attributes for the '#caption' & '#gallery' IDs*/
-#caption, #gallery {
-	text-align: center;
+/*General 'a' Attributes*/
+main a {
+	position: relative;
 }
-
