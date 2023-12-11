@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/*
+Modified By: Alan Hernandez
+Date Started: December 10, 2023
+*/
+
+/*Main#jdom Attributes*/
+main#jdom {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+	width: 650px;
+	margin: 0 auto;
+	padding: 15px 25px;	
+	border: 3px solid blue;
+}
+
+/*error* Attributes*/
+.error {
+    color: red;
+    font-style: italic;
+}
+
+/*Main 'Body' Attributes*/
+main body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 600px;
+    border: 3px solid blue;
+    padding: 0 2em 1em;
+}
+
+/*Main 'div' Attributes*/
+main div {
+    margin-bottom: 0.5em;
+}
+
+/*Main 'fieldset' Attributes*/
+main fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .5em;
+}
+
+/*Main 'legend' Attributes*/
+main legend {
+    color: blue;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+
+/*Main 'label' Attributes*/
+main label {
+    display: inline-block;
+    width: 6em;
+}
+
+/*Main 'input' & 'select' Attributes*/
+main input, select {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+
+/*Main 'input' Attributes*/
+main input {
+    width: 14em;	
+}
+
+/*Main 'input.left' Attributes*/
+main input.left {
+	width: 1em;
+	padding-left: 0;
+}
+
+/*Main 'p' Attributes*/
+main p {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+/*input.last {
+	margin-bottom: 1em;
+}*/
+
+/*Main '#adults' & '#children' Attributes*/
+main #adults, #children {
+	width: 35px;
+}
+
+/*Main '#smoking' Attributes*/
+main #smoking {
+	width: 1em;
+	margin-left: 0;
+}
+
+/*Main '#submit' Attributes*/
+main #submit {
+	margin-left: 0;
+	width: 10em;
+}
+
+/*Main 'span' Attributes*/
+main span {
+	color: red;
+}

@@ -14,23 +14,53 @@ $(document).ready( () => {
 // to the 'swappedImage.src' Object's src attribute.
 		swappedImage.src = $(element).attr("href");
 	});
+
+/* // The following function controls the visibility of the '#image' & '#caption'.
+	const fadeInOut = () => {
+	// The caption is supposed to fade out.
+		$("#caption").fadeOut(1000);
+	// The image is supposed to fade out.
+		$("#image").fadeOut(1000,
+			() => {
+				if () {
 	
+				}
+				else {
+	
+				}
+			}
+		);
+	};
+// The variable 'timer1' is defined below.
+	let timer1 = setInterval(fadeInOut, 1000);
 // Set up event handlers for links.
-	$("#image_list a").click( evt => {
+ 	$("#image_list a").click( evt => {
 // The value of 'evt.currentTarget' is stored within the constant 'link'.
 		const link = evt.currentTarget;
-// The image is supposed to fade out.
-		$("#image").fadeOut(1000);
-// The caption is supposed to fade out.
-		$("#caption").fadeOut(1000);
-// The constant 'imageURL' is defined below.
-		const imageURL = $(link).attr("href");
-// Image is swapped.
-		$("#image").attr("src", imageURL).fadeIn(1000);
-// The constant 'caption' is defined below.
-		const caption = $(link).attr("title");
-// Caption is swapped.
-		$("#caption").text(caption).fadeIn(1000);
+// Timer or Something.
+		if (timer1 != null) {
+			clearInterval(timer1);
+			timer1 = null;
+		}
+		else {
+			runSlideShow();
+			timer1 = setInterval(fadeInOut, 1000);
+		}
+
+ */
+
+// // The image is supposed to fade out.
+// 		$("#image").fadeOut(1000);
+// // The caption is supposed to fade out.
+// 		$("#caption").fadeOut(1000);
+// // The constant 'imageURL' is defined below.
+// 		const imageURL = $(link).attr("href");
+// // Image is swapped.
+// 		$("#image").attr("src", imageURL).fadeIn(1000);
+// // The constant 'caption' is defined below.
+// 		const caption = $(link).attr("title");
+// // Caption is swapped.
+// 		$("#caption").text(caption).fadeIn(1000);
 
 // It's some sort of unused function.
 // setInterval( () => {
