@@ -29,8 +29,8 @@ $(document).ready( () => {
 		if (nightVar == "") {
 			$("#nights").next().text("Required!");
 			isValid = false;
-		} else if ( emailPattern.isInteger(nightVar) == false ) {
-			$("#nights").next().text("Nights must be Numeric!");
+		} else if ( nightVar.isNumeric() == false ) {
+			$("#nights").next().text("Must be Numeric!");
 			isValid = false;
 		} else {
 			$("#nights").next().text("");
